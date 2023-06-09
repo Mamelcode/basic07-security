@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Spring Security</title>
+</head>
+<body>
+	<h2>회원가입</h2>
+	<form action="/join-task" method="post">
+		<input type="hidden" name="_csrf" value="{{csrf}}">
+		<input type="text" name="username" placeholder="Username"><br>
+		<input type="password" name="password" placeholder="Password"><br>
+		<button>회원가입</button>
+	</form>
+</body>
+</html>

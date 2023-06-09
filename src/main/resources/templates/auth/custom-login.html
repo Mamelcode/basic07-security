@@ -9,6 +9,7 @@
 		<p style="color: red; font-weight: 900;">로그인에 실패하였습니다.</p>
 	{{/error}}
 	<form action="/login-task" method="post">
+		<input type="hidden" name="_csrf" value="{{csrf}}">
 		<input type="text" name="username" placeholder="username">
 		<input type="password" name="password" placeholder="password">
 		<button type="submit">로그인</button>

@@ -7,7 +7,13 @@
 <body>
 	<h2>{{msg}}</h2>
 	
-	<a href="/logout">로그아웃</a>
+	<a href="/logout">로그아웃</a><br>
+	<form action="/logout" method="post">
+		<input type="hidden" name="_csrf" value="{{csrf}}">
+		<button>로그아웃</button>
+	</form>
+	
+	
 	
 	<br><a href="/admin" style="margin-right: 10px;">admin</a><a href="/admin/notice">admin-notice</a>
 	<br><a href="/manager" style="margin-right: 10px;">manager</a><a href="/manager/report">manager-report</a>
